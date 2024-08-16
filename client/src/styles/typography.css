@@ -1,0 +1,196 @@
+/* Importing Google Fonts */
+@font-face {
+    font-family: "Hubot Sans";
+    src: url("/fonts/Hubot Sans/WOFF 2/HubotSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hubot Sans";
+    src: url("/fonts/Hubot Sans/WOFF 2/HubotSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url("/fonts/Mona Sans/WOFF 2/MonaSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url("/fonts/Mona Sans/WOFF 2/MonaSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+/* Define CSS Variables for Light and Dark Mode */
+body.light {
+    --background-color: #ededed;
+    --text-color: #757575;
+    --heading-color: #121316;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+    --table-header-bg: #f2f2f2;
+    --code-bg: #f8f8f8;
+    --button-color: #121316;
+    --button-hover-bg: #f0f0f0; /* Opposite background color */
+    --button-hover-text: #757575; /* Opposite text color */
+}
+
+/* Dark Theme */
+body.dark {
+    --background-color: #1a1a1a;
+    --text-color: #757575;
+    --heading-color: #f0f0f0;
+    --link-color: #bb86fc;
+    --link-hover-color: #3700b3;
+    --table-header-bg: #333;
+    --code-bg: #1e1e1e;
+    --button-color: #f0f0f0;
+    --button-hover-bg: #1a1a1a; /* Opposite background color */
+    --button-hover-text: #757575; /* Opposite text color */
+}
+
+/* Global Styles */
+body {
+    font-family: "Instrument Sans", sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: auto;
+    letter-spacing: -1.5px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: auto;
+    letter-spacing: -1px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: -1px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: auto;
+    letter-spacing: -1px;
+    border-radius: 100px;
+    padding: 15px 50px;
+    border: 2px solid transparent;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    width: fit-content;
+    transition: 0.3s ease;
+}
+button:hover {
+    letter-spacing: -1px;
+    border-radius: 100px;
+    padding: 15px 50px;
+    border: 2px solid var(--button-color);
+    background-color: transparent;
+    color: var(--button-hover-text);
+
+
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: auto;
+    letter-spacing: 0px;
+}
+
+/* Lists */
+ul,
+ol {
+    padding: 0;
+}
+
+li {
+    line-height: 1.6;
+}
+
+/* Spans */
+span {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: 700;
+}
+
+/* Additional Styling */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+code {
+    background-color: var(--code-bg);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
