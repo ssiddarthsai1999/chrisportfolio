@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
 function Navbar({ portfolioData }) {
     const navItems = portfolioData.navItems;
+    const [isActive, setIsActive] = useState("home");
+    const location = useLocation();
+
+   useEffect(() => {
+       const path = location.pathname.replace("/", "");
+       setIsActive(path || "home");
+   }, [location.pathname]);
 
     return (
         <div className="bg-gray-300 p-4 flex justify-between items-center px-24">
@@ -23,19 +30,19 @@ function Navbar({ portfolioData }) {
                         <a
                             href={x.linkTo}
                             key={x.id}
-                            className="flex items-center"
+                            className="flex items-center text-[16px]"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <h5 className="text-[16px]">{x.name}</h5>
+                            <h5 className="">{x.name}</h5>
                         </a>
                     ) : (
                         <Link
                             to={x.directTo}
                             key={x.id}
-                            className="flex items-center "
+                            className={`flex items-center text-[16px] ${x.name.toLowerCase()===isActive ? "text-yellow-600" : "text-black"} `}
                         >
-                            <h5 className="text-[16px]">{x.name}</h5>
+                            <h5 className="">{x.name}</h5>
                         </Link>
                     )
                 )}
