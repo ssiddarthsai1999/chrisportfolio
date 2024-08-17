@@ -35,9 +35,7 @@ body.light {
     --link-hover-color: #0056b3;
     --table-header-bg: #f2f2f2;
     --code-bg: #f8f8f8;
-    --button-color: #121316;
-    --button-hover-bg: #f0f0f0; /* Opposite background color */
-    --button-hover-text: #757575; /* Opposite text color */
+
 }
 
 /* Dark Theme */
@@ -49,9 +47,7 @@ body.dark {
     --link-hover-color: #3700b3;
     --table-header-bg: #333;
     --code-bg: #1e1e1e;
-    --button-color: #f0f0f0;
-    --button-hover-bg: #1a1a1a; /* Opposite background color */
-    --button-hover-text: #757575; /* Opposite text color */
+
 }
 
 /* Global Styles */
@@ -111,7 +107,7 @@ h6 {
     font-size: 16px;
     font-weight: 400;
 }
-button {
+/* button {
     font-size: 16px;
     font-weight: 500;
     line-height: auto;
@@ -133,7 +129,7 @@ button:hover {
     color: var(--button-hover-text);
 
 
-}
+} */
 
 /* Paragraphs */
 p {
@@ -184,10 +180,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--link-hover-color);
-    text-decoration: underline;
-}
+
 
 code {
     background-color: var(--code-bg);

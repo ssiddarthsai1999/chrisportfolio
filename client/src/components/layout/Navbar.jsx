@@ -30,7 +30,7 @@ function Navbar({ portfolioData }) {
                         <a
                             href={x.linkTo}
                             key={x.id}
-                            className="flex items-center text-[16px]"
+                            className="flex items-center text-[16px] hover:text-yellow-600 duration-200 ease-in"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -40,7 +40,11 @@ function Navbar({ portfolioData }) {
                         <Link
                             to={x.directTo}
                             key={x.id}
-                            className={`flex items-center text-[16px] ${x.name.toLowerCase()===isActive ? "text-yellow-600" : "text-black"} `}
+                            className={`flex items-center text-[16px] ${
+                                x.name.toLowerCase() === isActive
+                                    ? "text-yellow-600"
+                                    : "text-black"
+                            } hover:text-yellow-600 duration-200 ease-in `}
                         >
                             <h5 className="">{x.name}</h5>
                         </Link>
