@@ -36,6 +36,7 @@ const portfolioData = {
     portfolio: [
         {
             id: 1,
+            scrollTo: "graphicDesign",
             title: "Graphic Design",
             description: "",
             logo: "https://media.licdn.com/dms/image/v2/D4D12AQHYC_ZczxV2zw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695524296879?e=2147483647&v=beta&t=rLMZ59ByIABpdPtfPZPZC65iXWG4zbht2eqKfWOdxRs",
@@ -43,12 +44,14 @@ const portfolioData = {
         {
             id: 2,
             title: "Logo Design",
+            scrollTo: "logoDesign",
             description: "",
             logo: "https://5.imimg.com/data5/SELLER/Default/2023/6/319605360/SS/CX/HM/781420/logo-design-service.jpg",
         },
         {
             id: 3,
             title: "UI/UX Design",
+            scrollTo: "uiuxDesign",
             description: "",
             logo: "https://images.shiksha.com/mediadata/shikshaOnline/mailers/2021/naukri-learning/oct/27oct/What-is-UI-UX-Design.jpg",
         },

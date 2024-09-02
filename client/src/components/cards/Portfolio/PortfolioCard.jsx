@@ -1,5 +1,6 @@
 import React from "react";
-
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 function PortfolioCard({ x, index }) {
     const isEven = index % 2 === 0; // Determine if the index is even or odd
 
