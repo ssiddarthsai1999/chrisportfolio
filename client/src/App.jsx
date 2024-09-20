@@ -25,6 +25,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
+import SinglePortfolio from "./pages/portfolio/SinglePortfolio";
 
 function App() {
     return (
@@ -53,6 +54,10 @@ function App() {
                     <Route
                         element={<Portfolio portfolioData={portfolioData} />}
                         path="/portfolio"
+                    />{" "}
+                    <Route
+                        element={<SinglePortfolio portfolioData={portfolioData} />}
+                        path="/portfolio/:title"
                     />
                 </Route>
             </Routes>
